@@ -8,7 +8,7 @@
     <param name="camera_name" value="camera"/>
     <param name="camera_frame" value="camera_link_optical"/>
     <param name="camera_info_url" value="package://melm_bringup/config/ov5645.ini"/>
-    <param name="gscam_config" value="v4l2src device=$(var device) ! video/x-raw,format=BGRx,framerate=$(var fps)/1,width=$(var width),height=$(var height) ! imxvideoconvert_g2d rotation=2 ! video/x-raw,format=BGRx,framerate=$(var fps)/1,width=$(var width),height=$(var height) ! videoconvert ! video/x-raw,format=BGR"/>
+    <param name="gscam_config" value="v4l2src device=$(var device) ! video/x-raw,format=BGRx,framerate=$(var fps)/1,width=$(var width),height=$(var height) ! imxvideoconvert_g2d rotation=0 ! video/x-raw,format=BGRx,framerate=$(var fps)/1,width=$(var width),height=$(var height) ! videoconvert ! video/x-raw,format=BGR"/>
     <param name="frame_id" value="camera_link_optical"/>
     <param name="sync_sink" value="true"/>
   </node>
